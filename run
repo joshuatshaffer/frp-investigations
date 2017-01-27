@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "--- Running ---"
+.cabal-sandbox/bin/ly > 'pos.dat'
+echo "--- Done running ---"

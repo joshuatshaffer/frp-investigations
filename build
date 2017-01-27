@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "--- Building ---"
+cabal --require-sandbox install -j
+echo "--- Done building ---"

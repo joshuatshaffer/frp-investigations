@@ -1,0 +1,29 @@
+#!/usr/bin/gnuplot
+#
+# Plot the position data in 'pos.dat' to show the path of the body.
+
+reset
+
+# wxt
+set terminal wxt size 800,600 enhanced font 'Verdana,10' persist
+# png
+#set terminal pngcairo size 350,262 enhanced font 'Verdana,10'
+#set output 'plotting_data1.png'
+# svg
+#set terminal svg size 350,262 fname 'Verdana, Helvetica, Arial, sans-serif' \
+#fsize '10'
+#set output 'plotting_data1.svg'
+
+# color definitions
+set border linewidth 1.5
+set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 ps 0 # --- blue
+
+unset key
+
+set ytics 1
+set tics scale 0.75
+
+set xrange [-10:10]
+set yrange [-10:10]
+
+plot 'posdat' with linespoints ls 1
