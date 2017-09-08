@@ -15,7 +15,7 @@ add2 (x1,y1) (x2,y2) = (x1+x2, y1+y2)
 
 gravityAt (x,y) = (x*s, y*s)
   where r2 = x*x + y*y
-        s = -9.81 / (r2 * sqrt r2)
+        s = -9.81 / (r2 ** (3/2))
 
 fallingBall :: Pos -> Vel -> SF () (Pos, Vel)
 fallingBall p0 v0 = proc () -> do

@@ -26,4 +26,4 @@ set tics scale 0.75
 set xrange [-10:10]
 set yrange [-10:10]
 
-plot 'posdat' with linespoints ls 1
+plot 'pos.dat' with linespoints ls 1
